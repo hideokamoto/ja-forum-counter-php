@@ -7,7 +7,7 @@ if ( ! $topic_no ) {
 $last_no = get_last_topic_no();
 $answer_list = get_current_topis( $topic_no, $last_no );
 show_top_10_answer( $answer_list );
-file_put_contents( 'start.txt', $last_no );
+file_put_contents( 'start.txt', $last_no + 1 );
 
 function get_start_topic_no() {
 	$fp = fopen('start.txt', 'r');
