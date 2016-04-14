@@ -10,5 +10,8 @@ $ php count.php
 ```
 
 ##Work log
+###Apr.15 ( Thanks to count @fumitomizuno)
+TOPIC_ID:158995 to TOPIC_ID:159000
+
 ###Apr.14
 TOPIC_ID:152980 to TOPIC_ID:158995

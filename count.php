@@ -39,13 +39,16 @@ function get_last_topic_no() {
 function show_top_10_answer( $answer_list ) {
 	$i = 1;
 	echo "Forum answer count\n";
+	$list = '';
 	foreach ( $answer_list as $name => $answer_cnt ) {
 		echo "{$name}:{$answer_cnt}\n";
+		$list .= "<a href='https://profiles.wordpress.org/{$name}'>{$name}</a>\n";
 		$i++;
 		if ( $i > 10 ) {
 			break;
 		}
 	}
+	echo $list;
 }
 
 function get_current_topis( $topic_no, $last_no ) {
